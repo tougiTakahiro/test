@@ -11,7 +11,9 @@ jobs:
 
     steps:
       - name: something test1
-        run: exit 1
+        run: |
+          sleep 30
+          exit 1
 
   check2:
     runs-on: ubuntu-latest
